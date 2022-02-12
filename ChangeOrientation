@@ -1,0 +1,17 @@
+local char = game.Players.LocalPlayer.Character
+local hatname --[[DO NOT CHANGE UNLESS YOU KNOW WHAT YOU ARE DOING!!!]] = "MediHood"
+local hatname2 = "Yoga Mat"
+local hatname3 = "DinoBBcap"
+local hatname4 = "Alo Cap"
+
+local cap = char[hatname]
+local cap2 = char[hatname2]
+local cap3 = char[hatname3]
+local cap4 = char[hatname4]
+
+while wait() do
+	--cap.Handle.Orientation = char["Head"].Orientation
+	cap2.Handle.Orientation = char["Head"].Orientation
+	--cap3.Handle.Orientation = char["Head"].Orientation
+	cap4.Handle.Orientation = char["Head"].Orientation
+end
