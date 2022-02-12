@@ -1,0 +1,53 @@
+--DO NOT CHANGE!
+
+local char = game.Players.LocalPlayer.Character
+local hatname --[[DO NOT CHANGE UNLESS YOU KNOW WHAT YOU ARE DOING!!!]] = "MediHood"
+local hatname2 = "Yoga Mat"
+local hatname3 = "DinoBBcap"
+local hatname4 = "Alo Cap"
+char[hatname].Handle.Anchored = false
+char[hatname].Handle.AccessoryWeld:Destroy()
+char[hatname].Handle.Mesh:Destroy()
+char[hatname2].Handle.Anchored = true
+char[hatname2].Handle.AccessoryWeld:Destroy()
+char[hatname2].Handle.SpecialMesh:Destroy()
+char[hatname3].Handle.Anchored = false
+char[hatname3].Handle.AccessoryWeld:Destroy()
+char[hatname3].Handle.Mesh:Destroy()
+char[hatname4].Handle.Anchored = true
+char[hatname4].Handle.AccessoryWeld:Destroy()
+char[hatname4].Handle.SpecialMesh:Destroy()
+
+wait(1)
+
+local cap = char[hatname]
+local cap2 = char[hatname2]
+local cap3 = char[hatname3]
+local cap4 = char[hatname4]
+local bodypos = Instance.new("BodyPosition", cap.Handle)
+local bodypos2 = Instance.new("BodyPosition", cap2.Handle)
+local bodypos3 = Instance.new("BodyPosition", cap3.Handle)
+local bodypos4 = Instance.new("BodyPosition", cap4.Handle)
+
+char[hatname].Handle.Anchored = false
+char[hatname2].Handle.Anchored = false
+char[hatname3].Handle.Anchored = false
+char[hatname4].Handle.Anchored = false
+
+--while wait(0.3) do
+    --bodypos.Position = cap.Handle.Position + Vector3.new(9, 50, 0)
+	bodypos2.Position = cap.Handle.Position + Vector3.new(13, 50, 0)
+	--bodypos3.Position = cap.Handle.Position + Vector3.new(9, 50, 0)
+	bodypos4.Position = cap.Handle.Position + Vector3.new(13, 50, 0)
+--end
+while wait(0.3) do
+    --bodypos.Position = char["Right Arm"].Position + Vector3.new(9, 2.5, 0)
+	bodypos2.Position = char["Right Arm"].Position + Vector3.new(10, 2.5, 0)
+	--bodypos3.Position = char["Left Arm"].Position + Vector3.new(-9, 2.5, 0)
+	bodypos4.Position = char["Left Arm"].Position + Vector3.new(-10, 2.5, 0)
+	wait(0.8)
+	--bodypos.Position = char["Right Arm"].Position + Vector3.new(9, 0, 0)
+	bodypos2.Position = char["Right Arm"].Position + Vector3.new(10, 0, 0)
+	--bodypos3.Position = char["Left Arm"].Position + Vector3.new(-9, 0, 0)
+	bodypos4.Position = char["Left Arm"].Position + Vector3.new(-10, 0, 0)
+end
