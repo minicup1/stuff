@@ -1,3 +1,5 @@
+--not mine i just had to delete the loading and the uhm.. the fake char (fake character)
+
 local NetworkAccess = coroutine.create(function()
 	settings().Physics.AllowSleep = false
 	while true do
@@ -28,7 +30,6 @@ FalseChar.Name = ""
 Instance.new("Part", FalseChar).Name = "Head"
 Instance.new("Part", FalseChar).Name = "Torso"
 Instance.new("Humanoid", FalseChar).Name = "Humanoid"
-FalseChar:Destroy()
 game:GetService("Players").LocalPlayer["Character"] = FalseChar
 game:GetService("Players").LocalPlayer["Character"].Humanoid.Name = "FalseHumanoid"
 local Clone = game:GetService("Players").LocalPlayer["Character"]:FindFirstChild("FalseHumanoid"):Clone()
@@ -51,6 +52,7 @@ workspace.Camera.CameraSubject = CloneChar.Humanoid
 CloneChar.Name = "CloneCharacter"
 CloneChar.Humanoid.DisplayDistanceType = "None"
 local DeadChar = workspace[game:GetService("Players").LocalPlayer.Name]
+FalseChar:Destroy()
 
 local LVecPart = Instance.new("Part", workspace)
 LVecPart.CanCollide = false
