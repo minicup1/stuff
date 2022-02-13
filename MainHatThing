@@ -40,7 +40,7 @@ char[hatname4].Handle.Anchored = false
 	--bodypos3.Position = cap.Handle.Position + Vector3.new(9, 50, 0)
 	bodypos4.Position = cap.Handle.Position + Vector3.new(13, 50, 0)
 --end
-while wait(0.3) do
+while wait(0.1) do
     --bodypos.Position = char["Right Arm"].Position + Vector3.new(9, 2.5, 0)
 	bodypos2.Position = char["Right Arm"].Position + Vector3.new(10, 2.5, 0)
 	--bodypos3.Position = char["Left Arm"].Position + Vector3.new(-9, 2.5, 0)
